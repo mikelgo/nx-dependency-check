@@ -1,0 +1,10 @@
+{
+  "executors": {
+    "check-deps": {
+      "implementation": "./src/executors/check-deps/executor",
+      "schema": "./src/executors/check-deps/schema.json",
+      "description": "Executor to automatically check outdated npm packages",
+      "hasher": "./src/executors/check-deps/file"
+    }
+  }
+}

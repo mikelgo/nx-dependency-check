@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "title": "CheckDeps executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "dependenciesToCheck": {
+      "type": "array",
+      "description": "List of package names to check"
+    },
+    "versionOffset": {
+      "type": "object",
+      "description": "Maximum major version offset a package can be behind the latest version"
+    },
+    "versionOffsetOverrides": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Overrides for the version offset for a specific package"
+    },
+    "failOnVersionMismatch": {
+      "type": "boolean",
+      "description": "Whether to fail the task if a version mismatch is found"
+    }
+  },
+  "required": []
+}

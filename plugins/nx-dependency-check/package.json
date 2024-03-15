@@ -1,0 +1,36 @@
+{
+  "name": "@mikelgo/nx-dependency-check",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "description": "Nx Plugin for managing dependency updates and not let your project become outdated",
+  "keywords": [
+    "nx",
+    "nx-plugin",
+    "dependency-management",
+    "Monorepo",
+    "npm",
+    "yarn",
+    "pnpm"
+  ],
+  "author": "Michael Berger",
+  "homepage": "https://github.com/code-workers-io/angular-kit/libs/rx-stateful",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikelgo/nx-dependency-check/",
+    "directory": "plugins/nx-dependency-check"
+  },
+  "bugs": {
+    "url": "https://github.com/mikelgo/nx-dependency-check/issues"
+  },
+  "dependencies": {
+    "@nx/devkit": "16.10.0",
+    "tslib": "^2.3.0"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "executors": "./executors.json"
+}

@@ -48,4 +48,4 @@ Let's go through the options:
 * `failOnVersionMismatch`: A boolean which defines if the build should fail if outdated packages are found. Default is `true`. Setting this option to `false` might be helpful if you do not want to make passing the deps-check as a hard criteria to pass your build. You wil anyway get a nice report.
 
 ## Nx version compatibility
-The plugin needs `@nx/devkit` version 18.0.0 or higher.
+The plugin needs `@nx/devkit` version 16.1.0 or higher.

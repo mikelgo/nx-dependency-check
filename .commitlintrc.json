@@ -7,7 +7,7 @@
       "always",
       [
         "plugin",
-        "nx-deps-check",
+        "nx-dependency-check",
         "chore"
       ]
     ],

@@ -16,7 +16,7 @@
     "pnpm"
   ],
   "author": "Michael Berger",
-  "homepage": "https://github.com/code-workers-io/angular-kit/libs/rx-stateful",
+  "homepage": "https://github.com/mikelgo/nx-dependency-check/",
   "repository": {
     "type": "git",
     "url": "https://github.com/mikelgo/nx-dependency-check/",

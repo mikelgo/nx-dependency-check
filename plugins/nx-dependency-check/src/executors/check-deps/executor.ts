@@ -83,12 +83,12 @@ async function checkVersions(params: {
         throw new Error('packageName or dependency not defined. This should not happen');
       }
 
-      result = doPackageComparison({
+      result.push(...doPackageComparison({
         installedDependency,
         packageName,
         maxVersionOffset: params.maxVersionOffset,
         versionOffsetOverrides: params.versionOffsetOverrides,
-      });
+      }));
     }
   }
 
@@ -108,12 +108,12 @@ async function checkVersions(params: {
         continue;
       }
 
-      result = doPackageComparison({
+      result.push(...doPackageComparison({
         installedDependency,
         maxVersionOffset: params.maxVersionOffset,
         versionOffsetOverrides: params.versionOffsetOverrides,
         packageName,
-      });
+      }));
     }
   }
 

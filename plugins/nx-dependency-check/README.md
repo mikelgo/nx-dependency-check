@@ -36,7 +36,11 @@ The `check-deps`-executor provides several configuration options. Here's an exam
         "major": 1
         },
         "versionOffsetOverrides": [{"packageName":  "xng-breadcrumb", "major": 1} ],
-        "failOnVersionMismatch": false
+        "failOnVersionMismatch": false,
+        "inputs": [
+          "package.json"
+        ],
+        "cache": true
       }
     }
 }
@@ -46,6 +50,7 @@ Let's go through the options:
 * `versionOffset`: a object which defines the version offset. Default is `{major: 1}` which means that a package is marked as outdated if it is more than one major version behind latest.
 * `versionOffsetOverrides`: A configuration where you can overrule the general `versionOffset` for certain packages. This is especially helpful if you have high-frequent packages or simply some packages which you can not update right now.
 * `failOnVersionMismatch`: A boolean which defines if the build should fail if outdated packages are found. Default is `true`. Setting this option to `false` might be helpful if you do not want to make passing the deps-check as a hard criteria to pass your build. You wil anyway get a nice report.
-
+* `inputs`: A list of files which are used to determine the packages to check. Default is `["package.json"]` which means that only the root `package.json` is used. You can also provide a list of files like `["package.json", "projects/**/package.json"]` to check all `package.json` files in your projects.
+* `cache`: whether to use the nx cache or not. Default is `false`.
 ## Nx version compatibility
 The plugin needs `@nx/devkit` version 16.1.0 or higher.

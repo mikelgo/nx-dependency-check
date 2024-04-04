@@ -7,6 +7,8 @@
 
 A Nx plugin to maintain a healthy project by checking automatically outdated packages.
 
+![poc](./poc-cutted.gif)
+
 ## Installation
 
 ```bash
